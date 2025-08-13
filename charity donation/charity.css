@@ -1,0 +1,125 @@
+{ margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #fff8f3;
+    color: #333;
+}
+/* HEADER */
+header {
+    background: #e85a4f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+header nav a {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+header nav a:hover { text-decoration: underline; }
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #e98074;
+    color: white;
+}
+.hero .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: white;
+    color: #e85a4f;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.hero .btn:hover { background: #f7f1f0; }
+/* SECTIONS */
+section { padding: 3rem 2rem; text-align: center; }
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+.stat h3 { color: #e85a4f; font-size: 2rem; }
+.tiers {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+.tier {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 200px;
+}
+.tier button {
+    margin-top: 1rem;
+    background: #e85a4f;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.tier button:hover { background: #d6453d; }
+.testimonial-list {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.testimonial {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+/* CTA FORM */
+.cta form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    gap: 1rem;
+}
+.cta input, .cta textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.cta button {
+    background: #e85a4f;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cta button:hover { background: #d6453d; }
+/* FOOTER */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 1rem;
+}
+footer a {
+    color: #f7c59f;
+    text-decoration: none;
+}
+footer a:hover { text-decoration: underline; }
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .stats, .tiers, .testimonial-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
